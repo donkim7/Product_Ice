@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    /* background-color:#182446 ; */
+    background-image: url(darkblue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #e4e0e0;
+}
+
+
+
+
+
+.dropdown-content {
+    display: none;
+    
+}
+
+.dropdown-content.active {
+    display: block;
+    font-size: smaller;
+}
+
+
+.dropdown-content {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: left;
+    
+} 
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+#myInput{
+    background-color: #b39bec;
+    border: none;
+    border-radius: 4px;
+    color: #141B2E;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+ /* table style */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #46346e;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+.product-table th {
+    background-color: #7C5CC4;
+}
+.edit-button{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.product-table button:hover{
+    background-color:#781e88 ;    /* fallback for old browsers */
+ }
+.product-table td:last-child {
+    text-align: center;
+    text-decoration: none;
+}
+
+.product-table button {
+    padding: 5px 15px;
+    background-color: #0D47A1;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+} 
+
+/*Expense Form Styles */
+.content {
+    padding: 20px;
+}
+
+.add-expense-form {
+    max-width: 600px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:#141b2e98;
+    color: #7C5CC4;
+}
+
+.add-expense-form h2 {
+    margin-bottom: 15px;
+    background-color: #7C5CC4;
+    color: white;
+    width: 70%;
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+    left: 53px;
+}
+
+.add-expense-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    left: 28px;
+    top: 15px;
+}
+
+.add-expense-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    left: 28px;
+    top: 15px;
+}
+
+.add-expense-form button {
+    padding: 10px 20px;
+    background-color: #7C5CC4;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    left: 28px;
+}
+
+.add-expense-form button:hover {
+    
+transition: ease-in-out;
+transition-duration: 0.7s;    
+background-color: #007bff;
+
+}
+
+
+/*history Form Styles */
+.content {
+    padding: 20px;
+}
+
+.history-list {
+    max-width: 1000px;
+    min-width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:#141b2e98;
+    color: #7C5CC4;
+    text-transform: uppercase;
+}
+.history-list th{
+    color: #d2d2d2;
+}
+
+.history-list h2 {
+    margin-bottom: 15px;
+    background-color: #7C5CC4;
+    color: white;
+    width: 70%;
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+
+
+
+
+.history-list button {
+    padding: 10px 20px;
+    background-color: #7C5CC4;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin: 2px;
+
+}
+
+.history-list button:hover {
+    
+transition: ease-in-out;
+transition-duration: 0.7s;    
+background-color: #007bff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Position the dropdown below the saleItem input field */
+#saleItemContainer {
+    position: relative;
+    z-index: 1; /* Ensure the input field is above the dropdown */
+}
+
+/* Add styles for the dropdown container */
+#resultsDropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+/* Show the dropdown when the saleItem input is focused */
+#saleItemContainer:focus-within #resultsDropdown {
+    display: block;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    position: relative; /* Add this */
+    color: #3F51B5;
+    font-weight: 400;
+}
+/* Add hover effect and adjust the line position */
+.dropdown-option:hover {
+    background-color: #f0f0f0; /* Shade of gray when hovering */
+}
+/* Style the last dropdown option's border */
+.dropdown-option:last-child {
+    border-bottom: none; /* Remove the line for the last element */
+}
+
+/* Add the small grey line */
+.dropdown-option::before {
+    content: "";
+    position: absolute;
+    width: 85%; /* Set the width of the line */
+    height: 1px;
+    background-color: #ccc;
+    bottom: 0;
+    left: 50%; /* Adjust the position to center the line */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(73 0 128 / 23%); /* Purple shade */
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0c0023e0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.headings {
+    margin-bottom: 15px;
+    background-color: #7C5CC4;
+    color: white;
+    width: 70%;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 7%;
+
+}
+
+
+
+
+
+#dateRange{
+    background-color: #b39bec;
+    border: none;
+    border-radius: 4px;
+    color: #141B2E;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    /* margin-left: 85%; */
+    /* display: inline-block; */
+}
+
+.date-range-dropdown label {
+    /* display: inline-block; */
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+.date-range-dropdown{
+    display: inline-table;
+    margin-left: 30%;
+    padding: 1%;
+    padding-left: 5%;
+    padding-inline: 5%;
+}
+
+/* Show the dropdown when the saleItem input is focused */
+/* .date-range-dropdown:focus-within #dateRange {
+    display: inline-block;
+} */
+
+
+/* Add hover effect and adjust the line position */
+#dateRange:hover {
+    background-color: #f0f0f0; /* Shade of gray when hovering */
+}
+
+
+#productUnitDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+
+
+

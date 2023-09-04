@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    background-color:#dde3f5 ;
+    color: #e4e0e0;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #141B2E;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    position: relative;
+    left: 25px;
+    font-size: large;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.sidebar ul li :hover{
+    
+    transition: ease-in-out;
+    color: #7C5CC4;
+    transition-duration: 0.5s;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a{
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-link{
+    padding: 15px;
+    position: relative;
+    left: 35px;
+    font-size: large;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+}
+
+
+.dropdown-content {
+    display: none;
+    
+}
+
+.dropdown-content.active {
+    display: block;
+    font-size: smaller;
+}
+
+
+.dropdown-content {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: left;
+    
+} 
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.headings {
+    margin-bottom: 15px;
+    background-color: #7C5CC4;
+    color: white;
+    width: 70%;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 7%;
+
+}
