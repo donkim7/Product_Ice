@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `fullname`, `email`, `password`) VALUES
-(1, 'Donald Kimonge', 'donkim018@gmail.com', 'donald');
+(1, 'Product Ice', 'donkim018@gmail.com', 'product123');
 
 -- --------------------------------------------------------
 
@@ -142,14 +142,14 @@ CREATE TABLE `sales` (
 --
 
 INSERT INTO `sales` (`sales_id`, `saleDate`, `saleItem`, `clientName`, `saleQuantity`, `saleUnit`, `salePrice`) VALUES
-(1, '2023-08-27', 'Maziwaa', 'Donald enterr', '7', '253', '450'),
-(2, '2023-08-30', 'Laptop', 'Donald enterprises', '10', '3000', '30000.00'),
-(3, '2023-08-31', 'pc', 'Donald enter', '20', '600', '12000.00'),
-(4, '2023-08-31', 'keyboard ', 'Donald enterr', '40', '3000', '120000.00'),
-(5, '2023-08-31', 'mkate', 'Donald enterprises', '40', '500', '18000.00'),
-(6, '2023-09-01', 'pc', 'Donald enter', '20', '4000', '80000.00'),
-(7, '2023-09-02', 'mkate', 'Donald enterprises', '2', '600', '1200.00'),
-(9, '2023-09-02', 'Maziwaa', 'Donald enter', '10', '330', '3300.00');
+(1, '2023-08-27', 'Maziwaa', 'Product enterr', '7', '253', '450'),
+(2, '2023-08-30', 'Laptop', 'Product enterprises', '10', '3000', '30000.00'),
+(3, '2023-08-31', 'pc', 'Product enter', '20', '600', '12000.00'),
+(4, '2023-08-31', 'keyboard ', 'Product enterr', '40', '3000', '120000.00'),
+(5, '2023-08-31', 'mkate', 'Product enterprises', '40', '500', '18000.00'),
+(6, '2023-09-01', 'pc', 'Product enter', '20', '4000', '80000.00'),
+(7, '2023-09-02', 'mkate', 'Product enterprises', '2', '600', '1200.00'),
+(9, '2023-09-02', 'Maziwaa', 'Product enter', '10', '330', '3300.00');
 
 --
 -- Indexes for dumped tables
